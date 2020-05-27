@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Michael Fallorina Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header></header>
     <nav>
-        <div class="nav-group">
+        <div class="nav-group">  <!-- Navigation -->
             <div class="nav-item">
                 <a href="index.html">Home</a>
             </div>
@@ -28,20 +29,20 @@
             </div>
         </div>
     </nav>
-        <div class="profile-group">
+        <div class="profile-group"> <!-- Group for Profile Picture -->
             <div class="profile-pic-item">
                 <img src="my-images/mike-fallorina.jpg" alt="Michael with Hat">
             </div>
             <div class="profile-pic-item">
                     <section>
-                        <h1 class="profile-title"><a href="http://www.google.com"><code>//Software Developer</code></a></h1>
+                        <h2 class="profile-title"><a href="http://www.google.com"><code>//Software Developer</code></a></h2>
                         <p>Student of life.</p>
                         <p><a href="mailto:michael.fallorina@gmail.com?Subject=Hello%20Michael" target="_top">michael.fallorina@gmail.com</a></p>
                     </section>
             </div>
         </div>
     <main>
-        <div class="stack-container">
+        <div class="stack-container"> <!-- Stack Container for Vector Logos -->
             <div class="portfolio-items-wrapper">
                 <div class="portfolio-item bg-html">
                     <div class="logo-wrapper">
@@ -64,8 +65,8 @@
     <br>
     <br>
         <div class="page-content-group"> <!-- Page Content Sections -->
-            <div class="about-wrapper" id="about">  <!-- About Section -->
-                <h1>About me</h1>
+            <div class="about-wrapper center" id="about">  <!-- About Section -->
+                <h2>About me</h2>
                 <p>I'm a Software Developer located in the San Francisco Bay Area looking to solve problems.  Thru many years of different careers from sales to performing on global stages, 
                     I have gained a unique outlook and acquired many skills that will help craft digital experiences as we know it.
                     I enjoy traversing new challenges that push me and all those around me to new heights.</p>
@@ -86,7 +87,7 @@
             </div>
 
             <div class="services-wrapper center" id= "services">  <!-- Services Section -->
-                <h1>Services</h1>
+                <h2>Services</h2>
                     <ul>
                         <li>Designs and develops unique websites for products online</li>
                         <li>Develops animations and intros</li>
@@ -94,30 +95,35 @@
                     </ul>
             </div>
 
-            <div class="project-group" id="projects">  <!-- Projects Section -->
-                <h1>Projects</h1>
-                <div class="project-item">
-                <img src="projects/construction-1.jpg" alt="">
-                    <div class="project-text">
-                        <h2>Project 1</h2>
+            <div class="project-wrapper center" id="projects">  <!-- Project Section -->
+                <h2>Projects</h2>
+                <div class="project-item-wrapper">
+                    <div class="project-img-background" style="background-image:url(projects/construction-1.jpg)">
+                    </div>
+                    <div class="project-text-wrapper">
+                        <h3>Project 1</h3>
                         <p>Description</p>
                         <p>Skills Used</p>
                         <p>Github</p>
                     </div>
                 </div>
-                <div class="project-item">
-                    <img src="projects/construction-2.jpg" alt="">
-                    <div class="project-text">
-                        <h2>Project 2</h2>
+
+                <div class="project-item-wrapper">
+                    <div class="project-img-background" style="background-image:url(projects/construction-2.jpg)">
+                    </div>
+                    <div class="project-text-wrapper">
+                        <h3>Project 2</h3>
                         <p>Description</p>
                         <p>Skills Used</p>
                         <p>Github</p>
                     </div>
-                 </div>
-                <div class="project-item">
-                    <img src="projects/construction-3.jpg" alt="">
-                    <div class="project-text">
-                        <h2>Project 3</h2>
+                </div>
+
+                <div class="project-item-wrapper">
+                    <div class="project-img-background" style="background-image:url(projects/construction-3.jpg)">
+                    </div>
+                    <div class="project-text-wrapper">
+                        <h3>Project 3</h3>
                         <p>Description</p>
                         <p>Skills Used</p>
                         <p>Github</p>
@@ -125,14 +131,29 @@
                 </div>
             </div>
                 
-            <div class="contact-wrapper" id="contact">
-                <h1>Contact</h1>
+            <div class="contact-wrapper center" id="contact"> <!-- Contacts Section -->
+                <h2>Contact</h2>
                 <div class="contact-icon-bar">
                     <a href="http://instagram.com/mikefal"><img src="icons/IG.png" class="social-icon" alt="Instagram icon image"></a>
                     <a href="https://www.linkedin.com/in/michaelfallorina/"><img src="icons/linkedin.png" class="social-icon" alt="Linkedin icon image"></a>
                     <a href="http://www.twitter.com/mikefal"><img src="icons/twitter.png" class="social-icon" alt="Twitter icon image"></a>
                     <a href="http://www.github.com/mdotfal"><img src="icons/github.png" class="social-icon" alt="Github icon image"></a>
                 </div>
+
+                <div class="contact-form">
+                    <form action="https://formspree.io/mlepjplw" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="name" type="text" name="name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" type="text" name="email">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </main>
