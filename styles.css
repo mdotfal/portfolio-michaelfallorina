@@ -123,6 +123,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .portfolio-items-wrapper {
@@ -189,10 +190,7 @@ body {
 }
 
 .services-wrapper {
-    flex: 1;
-    justify-content: left;
     width: 100%;
-    text-align: left;
     margin: 0px;
     padding: 0px;
 }
@@ -202,21 +200,20 @@ body {
 }
 
 .services-wrapper ul {
-    flex: 1;
-    width: 37%;
+    display: flex;
     flex-direction: column;
-    text-align: left;
-    margin: auto;
-    margin-right: 0;
+    align-items: flex-end;
 }
 
-.servies-wrapper ul li {
-    display: flex;
-    justify-content: flex-end;
-    /* width: 36%; */
+.services-wrapper ul li {
     text-align: left;
-    padding-left: 0;
+    width: 30%;
     margin-right: 0;
+
+}
+
+.services-list {
+    align-items: flex-end;
 }
 
 /* Projects Styles */
@@ -257,6 +254,7 @@ body {
 
 .contact-icon-bar {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .social-icon {
@@ -264,8 +262,10 @@ body {
 }
 
 .contact-form {
+    margin: auto;
     margin-bottom: 20px;
     text-align: left;
+    width: 50%;
 }
 
 form {
@@ -298,13 +298,13 @@ form textarea {
 /* Global Styles */
 
 .center {
-    margin: auto;
+    /* margin: auto; */  /* This corrected side scrolling issue */
     width: 100%;
     padding: 10px;
     overflow: hidden;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     .profile-pic-item img {
         width: 75%;
     }
@@ -318,8 +318,12 @@ form textarea {
     }
 
     .services-wrapper ul {
+        align-items: flex-start;
         margin-left: 0;
-        width: 90%;
+    }
+
+    .services-wrapper ul li {
+        width: 80%;
     }
 
     .contact-wrapper {
@@ -327,7 +331,10 @@ form textarea {
         text-align: left;
     }
 
-    
+    .contact-form {
+        width: 80%;
+    }
+
     .project-text-wrapper {
         flex-direction: column;
         justify-content: left;
