@@ -247,6 +247,13 @@ body {
     justify-content: left;
 }
 
+.project-text-wrapper a {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: left;
+}
+
 .project-text-wrapper ul {
     flex-direction: row;
     list-style-type: none;
@@ -258,6 +265,13 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-right: 40px;
+}
+
+.github-links,
+.github-links a {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
 }
 
 /* Contact Styles */
