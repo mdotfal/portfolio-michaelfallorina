@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -378,7 +379,7 @@ form textarea {
 
     .project-item-wrapper p {
         text-align: left;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .project-text-wrapper h3 {
