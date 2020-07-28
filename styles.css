@@ -207,7 +207,7 @@ body {
 }
 
 .services-list {
-    /* align-items: flex-end; */
+    align-items: flex-end;
 }
 
 /* Projects Styles */
