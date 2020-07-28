@@ -99,13 +99,13 @@ body {
     justify-content: center;
 }
 
-.profile-title h2, a {
+.profile-title h1, a {
     text-decoration: none;
     color: #000;
     padding: 9px;
 }
 
-.profile-pic-item h2 {
+.profile-pic-item h1 {
     font-size: 30px; 
 }
 
@@ -191,14 +191,14 @@ body {
     text-align: left;
 }
 
-.services-wrapper ul {
+.services-wrapper ol {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     margin-left: 0;
 }
 
-.services-wrapper ul li {
+.services-wrapper ol li {
     text-align: left;
     width: 80%;
     margin-right: 0;
@@ -206,7 +206,7 @@ body {
 }
 
 .services-list {
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 /* Projects Styles */
@@ -350,11 +350,11 @@ form textarea {
         text-align: right;
     }
 
-    .services-wrapper ul {
+    .services-wrapper ol {
         align-items: flex-end;
     }
 
-    .services-wrapper ul li {
+    .services-wrapper ol li {
         width: 30%;
     }
 
