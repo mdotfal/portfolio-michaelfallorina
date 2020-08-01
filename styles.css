@@ -6,23 +6,26 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
 }
 
 
 /*  Navigation Styles  */
 
+#home-btn {
+    display: none;
+}
+
 .nav-group {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    font-size: 22px;
     padding: 15px;
 }
 
 .nav-item {
     justify-content: center;
-    margin: auto;
 }
 
 .nav-item:nth-child(1) {
@@ -36,8 +39,6 @@ body {
 .nav-item a {
     text-decoration: none;
     text-transform: uppercase;
-    align-items: center;
-
 }
 
 .nav-item a:hover {
@@ -65,7 +66,7 @@ body {
 }
 
 .dropdown {
-    display: none;
+    display: block;
     padding: 0;
 }
 
@@ -335,7 +336,14 @@ form textarea {
 }
 
 @media all and (min-width: 800px) {
+    #home-btn {
+        display: block;
+    }
+
     .nav-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 50px;
     }
 
