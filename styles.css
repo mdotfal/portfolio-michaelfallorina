@@ -77,6 +77,16 @@ body {
 
 /* Profile Picture Styles */
 
+#intro {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#intro p {
+    margin: 10px;
+}
+
 .profile-group {
     display: flex;
     flex-direction: column;
