@@ -237,7 +237,7 @@ body {
 }
 
 .project-img-background {
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-size: cover;
     background-position: cover;
@@ -284,6 +284,10 @@ body {
     display: flex;
     flex-direction: row;
     padding: 0;
+}
+
+.github-links a:hover {
+    color: orange;hover
 }
 
 /* Contact Styles */
@@ -408,6 +412,10 @@ form textarea {
     .project-text-skills {
         justify-content: flex-end;
         margin-right: 40px;
+    }
+
+    .project-img-background {
+        height: 500px;
     }
 
 }
