@@ -395,7 +395,7 @@ form textarea {
         justify-content: space-between;
     }
 
-    .portfolio-items-wrapper {
+    .portfolio-item-wrapper {
         flex-direction: row;
     }
 
@@ -415,7 +415,14 @@ form textarea {
     }
 
     .project-img-background {
-        height: 500px;
+        display: flex;
+        justify-content: center;
+        height: 700px;
+        width: 75%;
+    }
+
+    .project-img-background style{
+        size: 25px;
     }
 
 }
