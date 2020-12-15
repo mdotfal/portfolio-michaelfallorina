@@ -114,7 +114,6 @@ body {
 .profile-title h1, a {
     text-decoration: none;
     color: #000;
-    padding: 9px;
 }
 
 .profile-pic-item h1 {
@@ -212,7 +211,7 @@ body {
 
 .services-wrapper ol li {
     text-align: left;
-    width: 80%;
+    width: 40%;
     margin-right: 0;
 
 }
@@ -237,11 +236,15 @@ body {
 }
 
 .project-img-background {
-    height: 250px;
+    /* height: 250px; */
     width: 100%;
-    background-size: cover;
+    /* background-size: cover;
     background-position: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+
+.project-img-background img {
+    height: 500px;
 }
 
 .project-h3 {
@@ -291,11 +294,6 @@ body {
 }
 
 /* Contact Styles */
-
-.contact-wrapper {
-    justify-content: left;
-    text-align: center; 
-}
 
 .contact-icon-bar {
     width: 100%;
@@ -378,7 +376,7 @@ form textarea {
     }
 
     .services-wrapper ol li {
-        width: 30%;
+        width: 40%;
     }
 
     .contact-wrapper {
@@ -395,7 +393,7 @@ form textarea {
         justify-content: space-between;
     }
 
-    .portfolio-item-wrapper {
+    .portfolio-items-wrapper {
         flex-direction: row;
     }
 
@@ -417,12 +415,8 @@ form textarea {
     .project-img-background {
         display: flex;
         justify-content: center;
-        height: 700px;
-        width: 75%;
-    }
-
-    .project-img-background style{
-        size: 25px;
+        height: 500px;
+        
     }
 
 }
