@@ -20,7 +20,7 @@ body {
 .nav-group {
     display: flex;
     justify-content: flex-start;
-    font-size: 22px;
+    font-size: 14px;
     padding: 15px;
 }
 
@@ -81,6 +81,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
+    font-size: 14px;
 }
 
 #intro p {
@@ -190,12 +191,14 @@ body {
 .about-wrapper {
     flex: 1;
     justify-self: left;
+    font-size: 14px;
 }
 
 .services-wrapper {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-size: 14px;
 }
 
 .services-wrapper h2 {
@@ -205,13 +208,11 @@ body {
 .services-wrapper ol {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     margin-left: 0;
 }
 
 .services-wrapper ol li {
     text-align: left;
-    width: 40%;
     margin-right: 0;
 
 }
@@ -229,6 +230,7 @@ body {
 .project-item-wrapper {
     position: relative;
     padding: 20px;
+    font-size: 14px;
 }
 
 .project-item-wrapper p {
@@ -236,15 +238,11 @@ body {
 }
 
 .project-img-background {
-    /* height: 250px; */
-    width: 100%;
-    /* background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat; */
+    width: 100%;  
 }
 
 .project-img-background img {
-    height: 500px;
+    height: 200px;
 }
 
 .project-h3 {
@@ -290,10 +288,14 @@ body {
 }
 
 .github-links a:hover {
-    color: orange;hover
+    color: orange;
 }
 
 /* Contact Styles */
+
+.contact-wrapper {
+    font-size: 14px;
+}
 
 .contact-icon-bar {
     width: 100%;
@@ -357,6 +359,14 @@ form textarea {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
+        font-size: 22px;
+    }
+
+    #intro,
+    .about-wrapper,
+    .services-wrapper,
+    .contact-wrapper {
+        font-size: 20px;
     }
 
     .profile-pic-item img {
@@ -416,7 +426,10 @@ form textarea {
         display: flex;
         justify-content: center;
         height: 500px;
-        
+    }
+
+    .project-img-background img {
+        height: 500px;
     }
 
 }
