@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 /***********************************/
 
 /* Mobile-First Styles */
@@ -5,7 +7,8 @@
 /* Master Styles */
 
 body {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.4em;
     font-size: 20px;
     margin: 0;
 }
@@ -101,7 +104,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 500px;
+    width: 50vw;
     margin: 0;
     
 }
@@ -118,7 +121,11 @@ body {
 }
 
 .profile-pic-item h1 {
-    font-size: 30px; 
+    font-size: 20px; 
+}
+
+.profile-pic-item p {
+    font-size: 14px; 
 }
 
 /* Portfolio Items Styles */
@@ -223,8 +230,13 @@ body {
 
 /* Projects Styles */
 
+.project-wrapper h2 {
+    font-size: 21px;
+}
+
 .project-items-wrapper {
     display: flex;
+    overflow: hidden;
 }
 
 .project-item-wrapper {
@@ -243,7 +255,8 @@ body {
 }
 
 .project-img-background img {
-    height: 200px;
+    height: 50vw;
+    border: .25px solid black;
 }
 
 .project-h3 {
@@ -375,6 +388,14 @@ form textarea {
         width: 100%;
     }
 
+    .profile-pic-item h1 {
+        font-size: 30px;
+    }
+
+    .profile-pic-item p {
+        font-size: 20px;
+    }
+
     .profile-pic-item h2 {
         font-size: 40px;
     }
@@ -398,6 +419,10 @@ form textarea {
 
     .contact-form {
         width: 80%;
+    }
+
+    .project-wrapper h2 {
+        font-size: 30px;
     }
 
     .project-text-wrapper {
