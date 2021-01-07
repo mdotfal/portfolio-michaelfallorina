@@ -286,7 +286,7 @@ body {
     display: flex;
     align-items: left;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .github-links a:hover {
