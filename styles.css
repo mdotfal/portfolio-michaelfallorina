@@ -238,7 +238,8 @@ body {
 }
 
 .project-img-background {
-    width: 100%;  
+    width: 100%;
+    text-align: center;  
 }
 
 .project-img-background img {
@@ -283,8 +284,9 @@ body {
 .github-links,
 .github-links a {
     display: flex;
-    flex-direction: row;
-    padding: 0;
+    align-items: left;
+    flex-direction: column;
+    padding: 0 10px;
 }
 
 .github-links a:hover {
@@ -430,6 +432,11 @@ form textarea {
 
     .project-img-background img {
         height: 500px;
+    }
+
+    .github-links {
+        flex-direction: row;
+        justify-content: center;
     }
 
 }
